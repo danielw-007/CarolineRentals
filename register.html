@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caroline Rentals</title>
+    <link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo1">
+        <img class="logo" src="images/logo1.gif"></img>
+        </div>
+        <div class="header-right">
+          <a class="button1" href="login.html">Login</a>
+          <a class="pemisah"></a>
+          <a class="button2" href="register.html">Register</a>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="product.html">Product</a>
+                    <ul id="drop">
+                        <li><a href="product.html">Family Car</a></li>
+                        <li><a href="#">Commercial Car</a></li>
+                        <li><a href="#">Luxury Car</a></li>
+                    </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <h1 id="h">Register</h1>
+    <form name="myForm" method="POST">
+        <div class="rcore">
+            <label>Name :</label>
+            <input type="text" class="input" id="inputNama"/><br/><br/>
+            <label>Email :</label>
+            <input type="text" class="input" id="inputEmail"/><br/><br/>
+            <label>Gender :</label>
+            <div class="gender" id="genderSelect">
+                <input type="radio" class="male" name="gender" value="Male"><label>Male   </label><input type="radio" class="female" name="gender" value="Female"><label>Female</label>
+            </div>
+            <div class="cityContain">
+                <label>City :</label>
+                <select class="city" id="citySelect">
+                    <option>Jakarta</option>
+                    <option>Semarang</option>
+                    <option>Makasar</option>
+                </select>
+            </div>
+            <label>Address :</label>
+            <textarea rows="3" cols="50" class="addr" id="address"></textarea>
+            <div class="regsbut">
+                <button class="register" id="btnSubmit">Register</button>
+            </div>
+        </div>
+    </form>
+    <footer>
+        <div class="footer">
+            <a href="https://www.instagram.com/danielw.007/" target="_blank"><img src="images/instagram.png"></a>
+            <a href="https://www.youtube.com/channel/UCYnbLBawtJ4Cccf0zePjIqw" target="_blank"><img src="images/youtube.png"></a>
+            <a href="https://twitter.com/binus_univ?lang=en" target="_blank"><img src="images/twitter.png"></a>
+            <a href="https://www.facebook.com/daniel.widjaja.92/" target="_blank"><img src="images/facebook.png"></a>
+            <div class="subs">
+                <p><h3>Subscribe Our Newsletter</h3></p>
+                <input class="em" type="text" placeholder="Your Email"><br/>
+                <a class="subsbut" href="#"><b>Subscribe</b></a>
+            </div>
+        </div>
+        <div class="cpy">
+            <p>&#169Copyright 2020 by Daniel Widjaja</p>
+        </div>
+    </footer>
+</body>
+</html>
+<script type="text/javascript" src="register.js"></script>
